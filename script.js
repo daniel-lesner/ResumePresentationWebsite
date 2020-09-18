@@ -7,7 +7,10 @@ const showCategory = (category) => {
     document.getElementById(category).style.display = 'block';
     document.getElementById('navbar__burger').checked = false;
     activeCategory = category;
-    showCVCategory('cv__objective')
+    
+    if (category == 'cv') {
+        showCVCategory('cv__objective')
+    }
     
     if (window.innerWidth < 800) {
         closeCVNavBar()
