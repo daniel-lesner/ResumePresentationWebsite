@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Lesner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+            <div class="navbar__logo">Daniel Lesner</div>
+            <label for="navbar__burger" class="navbar__burger__label">&#9776</label>
+            <input type="checkbox" id="navbar__burger"/>
+            <header class="navbar__menu" id="navbar__menu">
+                <div class="navbar__item" onclick="showCategory('home')">Home</div>
+                <div class="navbar__item" onclick="showCategory('cv')">CV</div>
+                <div class="navbar__item" onclick="showCategory('projects')">Projects</div>
+                <div class="navbar__item" onclick="showCategory('contact')">Contact</div>
+            </header>
+    </header>
+    <div class="main">
+        <div id="home">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            ABOUT ME
+                        </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        Economics graduate, with a strong background in mathematics and statistics and a passion for programming and web development
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Strong knowledge of JavaScript and web markup languages, including HTML5 and CSS3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Expert in Python and R
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="cv">
+            <div class="cv__navbar" id="cv__navbar">
+                <div class="cv__navbar__item" onclick="showCVCategory('cv__objective')">Objective</div>
+                <div class="cv__navbar__item" onclick="showCVCategory('cv__education')">Education</div>
+                <div class="cv__navbar__item" onclick="showCVCategory('cv__experience')">Experience</div>
+                <div class="cv__navbar__item" onclick="showCVCategory('cv__skills')">Skills</div>
+                <div class="cv__navbar__item"><a id="cv__navbar__download__button" href="assets/Daniel_Lesner_Resume.pdf" download>Download</a></div>
+            </div>
+            <div id="cv__objective">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                OBJECTIVE
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            To follow my passion for programming and apply my self-taught skills by working in the web development industry
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="cv__education">
+                <table id="table">
+                    <tr>
+                        <td class="cv__year__column">
+                            <div>
+                                09/2016 - 10/2017
+                            </div>
+                            <div>
+                                (1 year)
+                            </div>
+                        </td>
+                        <td class="cv__table__title">
+                            <div>
+                                <b><i>University of Cambridge, </b></i>
+                            </div>
+                            <div>
+                                MPhil Economics (58/100)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cv__year__column">
+                        </td>
+                        <td>
+                            <div>
+                                Specialised in microeconomics, macroeconomics, and econometrics
+                            </div>
+                            <div>
+                                Dissertation on “Inequality and its Effect on Growth”
+                            </div>
+                        </td>
+                        <td>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cv__year__column">
+                            <div>09/2011 - 06/2014</div>
+                            <div>(3 years)</div>
+                        </td>
+                        <td class="cv__table__title">
+                            <div>
+                                <b><i>University of Essex, </i></b>
+                            </div>
+                            <div>
+                                BSc Economics (78/100)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cv__year__column">
+                        </td>
+                        <td>
+                            <div>
+                                Graduated with a First Class award, included in “Dean’s List” due to my exceptional results
+                            </div>
+                            <div>
+                                Specialised in calculus, statistics and econometrics
+                            </div>
+                            <div>
+                                Dissertation on “The Effects of Minimum Wages in Europe”
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cv__year__column">
+                            <div>09/2003 - 07/2011</div>
+                            <div>(8 years)</div>
+                        </td>
+                        <td class="cv__table__title">
+                            <div><b><i></i>Costache Negruzzi National College, </i></b></div>
+                            <div>Iași, Romania</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div>
+                                Passed the Romanian Baccalaureate with a top grade (8.6 out of 10) at the subjects: Mathematics (9.5), Physics (8.1) and Romanian Literature (8.1)
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="cv__experience">
+                <table id="table">
+                    <tr>
+                        <td class="cv__year__column">
+                            <div>
+                                10/2018 - present
+                            </div>
+                            <div>
+                                (2 years)
+                            </div>
+                        </td>
+                        <td class="cv__table__title">
+                            <div>
+                                <b><i>Junior Data Scientist, </i></b>
+                            </div>
+                            <div>
+                                GfK, Bucharest, Romania
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div>
+                                Projects range from Test and Control studies (which measure advertisement effectiveness using geographic experiments) to more complex ones such as Marketing Mix Modelling studies (which help clients to understand the impact of their promotions and advertisements spending, as well as to provide forecasts to assist them in their future marketing campaigns) 
+                            </div>
+                            <div>
+                                Working mainly with <b>R, SPSS</b> and <b>VBA</b>
+                            </div>
+                            <div>
+                                Relying on <b>R, Python</b> and <b>VBA</b> to automate some of my tasks
+                            </div>
+                            <div>
+                                Collecting and processing data; following and modifying pre-made scripts or creating new scripts
+                            </div>
+                            <div>
+                                Training colleagues and writing technical guides
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cv__year__column">
+                            <div>
+                                01/2018 - 10/2018
+                            </div>
+                            <div>
+                                (9 months)
+                            </div>
+                        </td>
+                        <td class="cv__table__title">
+                            <div>
+                                <b><i>Junior Strategy Analyst, </i></b>
+                            </div>
+                            <div>
+                                The Smart Cube, Timisoara, Romania
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div>
+                                Conducted market research by using either primary or secondary research methods
+                            </div>
+                            <div>
+                                Compiled reports in order to help clients better understand their competitive landscape or the impact of their products and services, and also to help them make decisions regarding market entry, growth, M&A acquisitions and many others
+                            </div>        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cv__year__column">
+                            <div>10/2013 - 05/2014</div>
+                            <div>(8 months)</div>
+                        </td>
+                        <td class="cv__table__title">
+                            <div>
+                                <b><i>Mathematics Tutor, </i></b>
+                            </div>
+                            <div>
+                                Frontrunners Essex, Colchester, England
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <div>
+                                Prepared and helped students on any mathematics related subjects
+                            </div>
+                            <div>
+                                Became more responsible and organised as I was also in charge of the coordination of the team and had to plan out the sessions and working hours
+                            </div>
+                            <div>
+                                Training students helped me further develop my communication skills, as I had to be able to explain clearly and rigorously different mathematical concepts
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="cv__skills">
+                <table id="cv__skills__main">
+                    <tr>
+                        <td>
+                            <div>
+                                Strong <b>JavaScript</b> skills and vast knowledge of web markup languages, including <b>HTML5</b> and <b>CSS3</b>
+                            </div>
+                            <div>
+                                Worked with <b>Node.js, WebPack</b> and JS libraries <b>(PixiJs)</b> and accustomed with various <b>Visual Studio Code</b> plugins <b>(Babel, ESLint, Live Server)</b>
+                            </div>
+                            <div>
+                                Capable of designing and creating websites, as well as taking care of the hosting and deployment processes
+                            </div>
+                            <div>
+                                Deep understanding of programming concepts <b>(objects and classes, algorithms, data structures)</b> and also of web architecture <b>(client-server interaction, packets, requests, HTTP, TCP/IP, DNS, API, microservices)</b>
+                            </div>
+                            <div>
+                                <b>Python</b> mastery and extensive experience in using data visualisation and pre-processing libraries <b>(numpy, pandas, matplotlib)</b>, machine learning and statistics libraries <b>(sklearn, scipy, statsmodel)</b>, automation and web-scraping packages <b>(selenium, beautifulsoup, urllib, requests)</b> and other popular libraries <b>(pygame)</b>
+                            </div>
+                            <div>
+                                Advanced <b>R</b> skills and strong experience with data visualisation and pre-processing libraries <b>(dplyr, tidyverse, ggplot2)</b>
+                            </div>
+                            <div>
+                                Knowledge of <b>SQL</b> and solid <b>VBA</b> skills
+                            </div>
+                            <div>
+                                Experience in utilising <b>Git</b> and collaborating with teams using version control
+                            </div>
+                            <div>
+                                Accustomed with <b>Unix</b>-like operating systems such as Linux and macOS; knowledgeable of <b>shell</b>-scripting
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <i class="cv__navbar__arrow" id="cv__navbar__arrow" onclick="showCVNavBar()"></i>
+        </div>
+        <div id="projects">
+            <table>
+                <tr>
+                    <td>
+                        Page under construction.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Please check my projects on my GitHub page (link in the Contact section).
+                    </td>
+                </tr>
+            </table> 
+        </div>
+        <div id="contact">
+            <table>
+                <tr>
+                    <td>
+                        <img src="assets/phone.png">
+                    </td>
+                    <td>
+                        <a href="tel:0728918588">0728918588</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="assets/email.png">
+                    </td>
+                    <td>
+                        <a href="mailto:daniel.lesner@icloud.com">daniel.lesner@icloud.com</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="assets/linkedin.png">
+                    </td>
+                    <td>
+                        <a href="http://www.linkedin.com/in/daniel-lesner" target="_blank">linkedin.com/in/daniel-lesner</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="assets/github.png">
+                    </td>
+                    <td>
+                        <a href="http://www.github.com/daniel-lesner" target="_blank">github.com/daniel-lesner</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__text">
+            &#169; 2020 Daniel Lesner. All rights reserved.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
