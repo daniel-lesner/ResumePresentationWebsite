@@ -5,13 +5,8 @@ html, body {
     background: rgb(233, 233, 233);
   }
 
-div {
-    margin: 0;
-    padding: 0;
-}
-
 td {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;/
 
     /* Disabled it as text looks weird
     text-align: justify; */
@@ -27,7 +22,7 @@ a {
 }
 
     a:hover {
-        color: grey;
+        color: rgb(155,155,155)
     }
 
 .navbar {
@@ -38,7 +33,6 @@ a {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1;
 
@@ -48,43 +42,41 @@ a {
 
     .navbar__logo { 
         padding-left: 1rem;
-        font-size: 20px;
+        font-size: 24px;
+        font-family: 'Akzidenz Grotesk';
     }
 
     .navbar__burger__label {
         padding-right: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
-        .navbar__burger__label:hover {
+        .navbar__burger__label:hover, .navbar__item:hover {
             cursor: pointer;
-            color: #aaa;
+            color: grey;
         }
 
-    #navbar__burger { display: none; }
+    #navbar__burger { 
+        display: none; 
+    }
 
-        #navbar__burger:checked ~ .navbar__menu { display: block; }
+        #navbar__burger:checked ~ .navbar__menu { 
+            display: block; 
+        }
 
     .navbar__menu {
         display: none;
         top: 10%;
         width: 100%;
         position: fixed;
-        transition: 1s;
     }
 
         .navbar__item {
             background: black;
-            box-sizing: border-box;
             border-top: 1px solid #333;
             padding: 0.5rem;
             text-align: center;
         }
-        
-            .navbar__item:hover{
-                cursor: pointer;
-                color: grey;
-            }
 
 .main {
         position: relative;
@@ -96,8 +88,6 @@ a {
     }
 
     #contact table, #projects table {
-        left: 0;
-        right: 0;
         margin: 0 auto;
     }
 
@@ -107,17 +97,13 @@ a {
 
     .cv__navbar {
         position: fixed;
-        min-height: 100vh;
         height: 100%;
-        width: 5%;
-        display: block;
         background: black;
         padding-top: 1rem;
     }
 
         .cv__navbar__item {
             color: white;
-            display: none;
             padding: 1rem 0 1rem 0.5rem;
         }
 
@@ -137,17 +123,16 @@ a {
         border-left: 20px solid green;
         position: fixed;
         top: 50%;
-        left: 5%;
         }
 
     #cv__objective, #cv__skills {
         padding: 5% 5% 0 2%;
-        margin: 0 2% 10% 10%;
+        margin: 0 2% 7% 10%;
     }
 
     #cv__experience, #cv__education {
         padding: 2% 0 5% 0;
-        margin: 0 2% 5% 10%;
+        margin: 0 2% 2% 10%;
     }
 
     .cv__year__column {
@@ -174,7 +159,7 @@ a {
     position: fixed;
 }
 
-@media screen and (min-width: 800px) and (min-height: 600px) {
+@media screen and (min-width: 800px) and (min-height: 800px) {
 
     .navbar {
         justify-content: space-evenly;
@@ -187,7 +172,6 @@ a {
 
         .navbar__logo {
             padding: 0;
-            text-align: center;
             position: fixed;
             font-size: 36px;
         }
@@ -196,7 +180,6 @@ a {
             width: 50%;
             top: 0;
             position: relative;
-            color: white;
             align-items: flex-end;
             display: flex;
             justify-content: space-around;
@@ -205,87 +188,63 @@ a {
         .navbar__item {
             border: none;
             font-size: 24px;
-            padding: 0 0 10px 0;
+            padding: 0 0 0.5rem 0;
         }
 
-        .main {
-            position: relative;
-            top: 10%;
-        }
-
-        #cv {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
+    #cv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     
         .cv__navbar {
-            position: fixed;
-            min-height: 100vh;
             display: none;
-            /* display: inline-block; */
-            color: white;
-            padding-top: 1rem;
-            margin-right: 0;
-            box-sizing: border-box;
-            width: 20%;
         }
     
             .cv__navbar__item {
                 font-size: 21px;
-                display: block;
-                /* padding: 1em 0 1em 0.5em; */
                 padding: 20px 0 20px 20px;
             }
-    
-                .cv__navbar__item:hover {
-                    cursor: pointer;
-                    color: grey;
-                }
     
         .cv__navbar__arrow {
             display: none;
             }
 
+    #cv table, #home table, #projects table, #contact table {
+        padding: 20px;
+        margin: 0 auto;
+        font-size: 24px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px rgba(0,0,0,0.3);
+        max-width: 50%;
+    }
 
-        #cv table, #home table, #projects table, #contact table {
-            padding: 20px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            font-size: 24px;
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 3px 3px rgba(0,0,0,0.3);
-            max-width: 50%;
-        }
+    #cv__objective table, #cv__education table, #cv__experience table, #cv__skills table {
+        margin-left: 20%;
+        margin-bottom: 0;
+    }
 
-        #cv__objective table, #cv__education table, #cv__experience table, #cv__skills table {
-            margin-left: 20%;
-        }
+    #cv__objective, #cv__objective th {
+        display:none;
+    }
+
+    #cv__education, #cv__experience {
+        margin-bottom: 1%;
+    }
+
+    #cv__objective, #cv__skills {
+        padding: 2% 0 0px 0;
+        margin: 0 2% 5% 10%;
+    }
 
         #cv table {
             max-width: 100%;
-            margin-right: 10px;
         }
 
             .cv__year__column {
-                /* width: 30% */
                 white-space: nowrap;
             }
-
-        #cv__objective, #cv__objective th {
-            display:none;
-        }
-
-        #cv__navbar {
-            width: 50%;
-        }
-
-        #cv__objective, #cv__skills {
-            padding: 2% 0 5% 0;
-            margin: 0 2% 10% 10%;
-        }
 }
 
 @media screen and (min-width: 1350px) {
