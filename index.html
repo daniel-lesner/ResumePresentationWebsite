@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Lesner</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
+    <meta name="description" content="Daniel Lesner Presentation Web Design Portfolio Resume CV Website">
 </head>
 <body>
     <header class="navbar">
             <div class="navbar__logo">Daniel Lesner</div>
-            <label for="navbar__burger" class="navbar__burger__label">&#9776</label>
+            <label for="navbar__burger" class="navbar__burger__label">&#9776;</label>
             <input type="checkbox" id="navbar__burger"/>
             <header class="navbar__menu" id="navbar__menu">
-                <div class="navbar__item" onclick="showCategory('home')">Home</div>
-                <div class="navbar__item" onclick="showCategory('cv')">CV</div>
-                <div class="navbar__item" onclick="showCategory('projects')">Projects</div>
-                <div class="navbar__item" onclick="showCategory('contact')">Contact</div>
+                <div class="navbar__item" onclick="showCategory('main__home')">Home</div>
+                <div class="navbar__item" onclick="showCategory('main__cv')">CV</div>
+                <div class="navbar__item" onclick="showCategory('main__projects')">Projects</div>
+                <div class="navbar__item" onclick="showCategory('main__contact')">Contact</div>
             </header>
     </header>
     <div class="main">
-        <div id="home">
+        <div id="main__home">
             <table>
                 <thead>
                     <tr>
@@ -45,15 +47,15 @@
                 </tr>
             </table>
         </div>
-        <div id="cv">
-            <div class="cv__navbar" id="cv__navbar">
-                <div class="cv__navbar__item" onclick="showCVCategory('cv__objective')">Objective</div>
-                <div class="cv__navbar__item" onclick="showCVCategory('cv__education')">Education</div>
-                <div class="cv__navbar__item" onclick="showCVCategory('cv__experience')">Experience</div>
-                <div class="cv__navbar__item" onclick="showCVCategory('cv__skills')">Skills</div>
-                <div class="cv__navbar__item"><a id="cv__navbar__download__button" href="assets/Daniel_Lesner_Resume.pdf" download>Download</a></div>
+        <div id="main__cv">
+            <div class="main__cv__navbar" id="main__cv__navbar">
+                <div class="main__cv__navbar__item" onclick="showCVCategory('main__cv__objective')">Objective</div>
+                <div class="main__cv__navbar__item" onclick="showCVCategory('main__cv__education')">Education</div>
+                <div class="main__cv__navbar__item" onclick="showCVCategory('main__cv__experience')">Experience</div>
+                <div class="main__cv__navbar__item" onclick="showCVCategory('main__cv__skills')">Skills</div>
+                <div class="main__cv__navbar__item"><a id="main__cv__navbar__download__button" href="assets/Daniel_Lesner_Resume.pdf" download>Download</a></div>
             </div>
-            <div id="cv__objective">
+            <div id="main__cv__objective">
                 <table>
                     <thead>
                         <tr>
@@ -69,10 +71,10 @@
                     </tr>
                 </table>
             </div>
-            <div id="cv__education">
-                <table id="table">
+            <div id="main__cv__education">
+                <table>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                             <div>
                                 09/2016 - 10/2017
                             </div>
@@ -80,7 +82,7 @@
                                 (1 year)
                             </div>
                         </td>
-                        <td class="cv__table__title">
+                        <td class="main__cv__table__title">
                             <div>
                                 <b><i>University of Cambridge, </b></i>
                             </div>
@@ -90,7 +92,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                         </td>
                         <td>
                             <div>
@@ -104,11 +106,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                             <div>09/2011 - 06/2014</div>
                             <div>(3 years)</div>
                         </td>
-                        <td class="cv__table__title">
+                        <td class="main__cv__table__title">
                             <div>
                                 <b><i>University of Essex, </i></b>
                             </div>
@@ -118,7 +120,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                         </td>
                         <td>
                             <div>
@@ -133,11 +135,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                             <div>09/2003 - 07/2011</div>
                             <div>(8 years)</div>
                         </td>
-                        <td class="cv__table__title">
+                        <td class="main__cv__table__title">
                             <div><b><i></i>Costache Negruzzi National College, </i></b></div>
                             <div>Iași, Romania</div>
                         </td>
@@ -153,10 +155,10 @@
                     </tr>
                 </table>
             </div>
-            <div id="cv__experience">
-                <table id="table">
+            <div id="main__cv__experience">
+                <table>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                             <div>
                                 10/2018 - present
                             </div>
@@ -164,7 +166,7 @@
                                 (2 years)
                             </div>
                         </td>
-                        <td class="cv__table__title">
+                        <td class="main__cv__table__title">
                             <div>
                                 <b><i>Junior Data Scientist, </i></b>
                             </div>
@@ -195,7 +197,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                             <div>
                                 01/2018 - 10/2018
                             </div>
@@ -203,7 +205,7 @@
                                 (9 months)
                             </div>
                         </td>
-                        <td class="cv__table__title">
+                        <td class="main__cv__table__title">
                             <div>
                                 <b><i>Junior Strategy Analyst, </i></b>
                             </div>
@@ -225,11 +227,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="cv__year__column">
+                        <td class="main__cv__year__column">
                             <div>10/2013 - 05/2014</div>
                             <div>(8 months)</div>
                         </td>
-                        <td class="cv__table__title">
+                        <td class="main__cv__table__title">
                             <div>
                                 <b><i>Mathematics Tutor, </i></b>
                             </div>
@@ -255,8 +257,8 @@
                     </tr>
                 </table>
             </div>
-            <div id="cv__skills">
-                <table id="cv__skills__main">
+            <div id="main__cv__skills">
+                <table id="main__cv__skills__main">
                     <tr>
                         <td>
                             <div>
@@ -290,9 +292,9 @@
                     </tr>
                 </table>
             </div>
-            <i class="cv__navbar__arrow" id="cv__navbar__arrow" onclick="showCVNavBar()"></i>
+            <i class="main__cv__navbar__arrow" id="main__cv__navbar__arrow" onclick="showCVNavBar()"></i>
         </div>
-        <div id="projects">
+        <div id="main__projects">
             <table>
                 <tr>
                     <td>
@@ -306,11 +308,11 @@
                 </tr>
             </table> 
         </div>
-        <div id="contact">
+        <div id="main__contact">
             <table>
                 <tr>
                     <td>
-                        <img src="assets/phone.png">
+                        <img src="assets/phone.png" alt="Phone">
                     </td>
                     <td>
                         <a href="tel:0728918588">0728918588</a>
@@ -318,7 +320,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="assets/email.png">
+                        <img src="assets/email.png" alt="Email Address">
                     </td>
                     <td>
                         <a href="mailto:daniel.lesner@icloud.com">daniel.lesner@icloud.com</a>
@@ -326,7 +328,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="assets/linkedin.png">
+                        <img src="assets/linkedin.png" alt="LinkedIn">
                     </td>
                     <td>
                         <a href="http://www.linkedin.com/in/daniel-lesner" target="_blank">linkedin.com/in/daniel-lesner</a>
@@ -334,7 +336,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="assets/github.png">
+                        <img src="assets/github.png" alt="GitHub">
                     </td>
                     <td>
                         <a href="http://www.github.com/daniel-lesner" target="_blank">github.com/daniel-lesner</a>
