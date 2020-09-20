@@ -6,6 +6,6 @@ Created mobile first
 To-Do-List:/
 
 Animate navbar
-Animate burger label and triangle label
-Animate cv__navbar and its label in order to show the user you can drag the nabar from the left
-Create portfolio page with iframes or videos of projects
+- Animate burger label and triangle label
+- Animate cv__navbar and its label in order to show the user you can drag the nabar from the left
+- Create portfolio page with iframes or videos of projects
