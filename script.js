@@ -71,10 +71,11 @@ const myFunction = () => {
         if (activeCategory == 'main__cv') {
             document.getElementById('main__cv__navbar').style.width = "20%";
             document.getElementById('main__cv__navbar').style.display ="inline-block";
+        }
+        items = document.getElementsByClassName('main__cv__navbar__item')
 
-            for (let eachItem of items) {
-                eachItem.style.display = 'block'
-            }
+        for (let eachItem of items) {
+            eachItem.style.display = 'block'
         }
     }
 }
