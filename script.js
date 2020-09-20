@@ -15,21 +15,21 @@ const showCategory = (category) => {
     if (window.innerWidth < 800) {
         closeCVNavBar()
     }
+    window.scrollTo(0,0); 
 }
 
 const showCVCategory = (category) => {
-    if (window.innerWidth < 800) {
-        document.getElementById(activeCVCategory).style.display = 'none';
-        document.getElementById(category).style.display = 'block';
-        closeCVNavBar()
-    } else {
+    document.getElementById(activeCVCategory).style.display = 'none';
+    document.getElementById(category).style.display = 'block';
+    if (window.innerWidth >= 800) {
         document.getElementById('main__cv__navbar').style.width = "20%";
         document.getElementById('main__cv__navbar').style.display ="inline-block";
-        document.getElementById(activeCVCategory).style.display = 'none';
-        document.getElementById(category).style.display = 'block';
+    } else {
+        closeCVNavBar()
     }
     activeCVCategory = category;
 
+    window.scrollTo(0,0); 
 }
 
 const showCVNavBar = () => {
@@ -59,5 +59,22 @@ const openCVNavBar = () => {
 
     for (let eachItem of items) {
         eachItem.style.display = 'block'
+    }
+}
+
+const myFunction = () => {
+    if (window.innerWidth < 800) {
+        closeCVNavBar()
+        cvNavBarOpen = false
+        document.getElementById('navbar__burger').checked = false;
+    } else {
+        if (activeCategory == 'main__cv') {
+            document.getElementById('main__cv__navbar').style.width = "20%";
+            document.getElementById('main__cv__navbar').style.display ="inline-block";
+
+            for (let eachItem of items) {
+                eachItem.style.display = 'block'
+            }
+        }
     }
 }

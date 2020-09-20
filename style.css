@@ -153,6 +153,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 
     /* Set position to relative if you don't
     want the footer to stick on the page */
