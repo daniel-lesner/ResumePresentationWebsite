@@ -12,7 +12,7 @@ const showCategory = (category) => {
         showCVCategory('main__cv__objective')
     }
     
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 800 && window.innerHeight < 800) {
         closeCVNavBar()
     }
     window.scrollTo(0,0); 
@@ -21,9 +21,16 @@ const showCategory = (category) => {
 const showCVCategory = (category) => {
     document.getElementById(activeCVCategory).style.display = 'none';
     document.getElementById(category).style.display = 'block';
-    if (window.innerWidth >= 800) {
+    if (window.innerWidth >= 800 && window.innerHeight >=800) {
         document.getElementById('main__cv__navbar').style.width = "20%";
         document.getElementById('main__cv__navbar').style.display ="inline-block";
+
+        items = document.getElementsByClassName('main__cv__navbar__item')
+
+        for (let eachItem of items) {
+            eachItem.style.display = 'block'
+        }
+
     } else {
         closeCVNavBar()
     }
@@ -63,19 +70,25 @@ const openCVNavBar = () => {
 }
 
 const myFunction = () => {
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 800 || window.innerHeight < 800) {
         closeCVNavBar()
         cvNavBarOpen = false
         document.getElementById('navbar__burger').checked = false;
-    } else {
+    } else if (window.innerWidth >= 800 && window.innerHeight >= 800)  {
         if (activeCategory == 'main__cv') {
             document.getElementById('main__cv__navbar').style.width = "20%";
             document.getElementById('main__cv__navbar').style.display ="inline-block";
-        }
-        items = document.getElementsByClassName('main__cv__navbar__item')
 
-        for (let eachItem of items) {
-            eachItem.style.display = 'block'
+            items = document.getElementsByClassName('main__cv__navbar__item')
+
+            for (let eachItem of items) {
+                eachItem.style.display = 'block'
+            }
+            items = document.getElementsByClassName('main__cv__navbar__item')
+
+            for (let eachItem of items) {
+                eachItem.style.display = 'block'
+            }
         }
     }
 }

@@ -87,7 +87,7 @@ a {
         padding: 2%;
     }
 
-    #main__contact table, #main__projects table {
+    #main__home table, #main__contact table, #main__projects table {
         margin: 0 auto;
     }
 
@@ -133,7 +133,13 @@ a {
     #main__cv__experience, #main__cv__education {
         padding: 2% 0 5% 0;
         margin: 0 2% 2% 10%;
+        /* margin: 0 auto; */
     }
+
+    #main__cv__objective table, #main__cv__skills table, #main__cv__experience table, #main__cv__education table {
+        margin: 0 auto;
+    }
+
 
     .main__cv__year__column {
         width: 26%;
